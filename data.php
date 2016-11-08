@@ -150,6 +150,7 @@
 			$html .= "<td>".$p->id."</td>";
 			$html .= "<td>".$p->taim."</td>";
 			$html .= "<td>".$p->intervall."</td>";
+			$html .= "<td><a href='edit.php?id=".$p->id."'>muuda</a></td>";
 		$html .= "</tr>";
 		
 		$i += 1;

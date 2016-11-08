@@ -143,7 +143,7 @@ require("../../config.php");
 		
 		$stmt = $mysqli->prepare("
 		
-		  SELECT id, plant,wateringInterval FROM flowers
+		  SELECT id, plant,wateringInterval FROM flowers WHERE deleted IS NULL
 		 
 		");
 		echo $mysqli->error;
