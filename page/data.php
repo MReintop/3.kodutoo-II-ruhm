@@ -98,37 +98,38 @@
  Tere tulemast     <?=$_SESSION["firstName"];?>!
 
 <h2><font face="verdana" color="#006600"> Toataimede sisestamine</font> </h2></center>
-
-
-	<center><form method=POST>
+<div class = "form-group col-sm-8  col-sm-offset-0">
+<div class="form-group col-sm-6 col-sm-offset-6" >
+	<form method=POST>
 		<?php echo $plantError;  ?>
 		<?php echo $wateringIntervalError;  ?>
 
           
 	 <p><font face="verdana" color="#006600">Sisesta taime nimetus</font></p>
-		<input name="user_plant" placeholder="taime nimetus"  type="text" value="<?=$plant;?>" > 
+		<input  class="form-control" name="user_plant" placeholder="taime nimetus"  type="text" value="<?=$plant;?>" > 
 
 	<br><br>
 
         <p><font face="verdana"color="#006600">Sisesta taime kastmisintervall</font></p>
-		<input name="waterings" placeholder="mitme päeva tagant"  type ="number"> 
+		<input  class="form-control" name="waterings" placeholder="mitme päeva tagant"  type ="number"> 
 
 	<br>
 
-		<input type="submit" value="Salvesta">
+		<input class="btn btn-success" type="submit" value="Salvesta">
 	<br><br>
 	
-	</form></center>
+	</form>
+	</div>
 
 
 
 
+	<div class="col-sm-6 col-sm-offset-6">
 	
 	
+	<?php
 	
-	<center><?php
-	
-	$html = "<table>";
+	$html = "<table class='table table-striped table-hover table-condensed table-bordered  '>";
 	$html .= "<tr>";
 		$html .= "<th>nr</th>";
 		$html .= "<th>id</th>";
@@ -163,7 +164,7 @@
 	
 	
 	echo $listHtml;
-	?><center>
+	?></div></div>
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23009900&amp;src=mreintop%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FTallinn" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 	
 	
