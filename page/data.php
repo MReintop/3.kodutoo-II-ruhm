@@ -164,14 +164,14 @@
 	
 	
 	echo $listHtml;
-	?></div></div>
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23009900&amp;src=mreintop%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FTallinn" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	?></div></div><br><br>
+	<a class="btn btn-default btn-success" href="?logout=1" role="button">Logi välja</a>
+<center><iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23009900&amp;src=mreintop%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FTallinn" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 	
 	
 	
-	
-		<a href="?logout=1">Logi välja</a>
-	</font>
+		
+		 
 	
 </center>
 
