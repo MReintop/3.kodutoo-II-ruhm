@@ -48,6 +48,11 @@ class Plant {
 			
 			$sort="id";
 		}	
+		
+		if($sort == "interval"){
+			$sort = "wateringInterval";
+		}
+		
 		echo "Sorteerin...";
 
 		$orderBy="ASC";
